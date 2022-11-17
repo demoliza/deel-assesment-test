@@ -6,10 +6,10 @@ const {sequelize} = require('./model')
 app.set('sequelize', sequelize);
 app.set('models', sequelize.models);
 
-const jobRoutes = require( './routes/job.routes');
-const profileRoutes = require( './routes/profile.routes');
-const adminRoutes = require( './routes/admin.routes');
-const contractRoutes = require('./routes/contract.routes');
+const jobRoutes = require( './routes/jobRoutes');
+const profileRoutes = require( './routes/profileRoutes');
+const adminRoutes = require( './routes/adminRoutes');
+const contractRoutes = require('./routes/contractRoutes');
 app.use('/contracts', contractRoutes);
 app.use('/jobs', jobRoutes);
 app.use('/balances', profileRoutes);
